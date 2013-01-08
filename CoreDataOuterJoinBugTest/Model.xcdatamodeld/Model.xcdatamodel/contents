@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Entity1" syncable="YES">
+        <relationship name="e2a" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity2" inverseName="e1a" inverseEntity="Entity2" syncable="YES"/>
+        <relationship name="e2b" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity2" inverseName="e1b" inverseEntity="Entity2" syncable="YES"/>
+    </entity>
+    <entity name="Entity2" syncable="YES">
+        <relationship name="e1a" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity1" inverseName="e2a" inverseEntity="Entity1" syncable="YES"/>
+        <relationship name="e1b" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity1" inverseName="e2b" inverseEntity="Entity1" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Entity1" positionX="63" positionY="192" width="128" height="73"/>
+        <element name="Entity2" positionX="313" positionY="192" width="128" height="73"/>
+    </elements>
+</model>
